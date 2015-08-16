@@ -1,0 +1,22 @@
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+
+<dialog
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+  id="myDialogId"
+  title="My Dialog"
+  ondialogaccept="return onOK();"
+  onload="onLoad();"
+  persist="screenX screenY width height"
+  windowtype="myDialogWindowType">
+
+  <script type="application/javascript" src="chrome://tamperdata/content/apply-values.js"/>
+  <grid>
+    <columns><column/><column/></columns>
+    <rows>
+      <!--row align="center"><label value="Name:"/><textbox id="ctamper-name"/></row>
+      <row align="center"><label value="Description:"/><textbox id="ctamper-description"/></row>
+      <row align="center"><spacer/><checkbox id="ctamper-enabled" label="Check to Enable"/></row-->
+      <row align="center"><spacer/><label value="Value:"/><textbox id="ctamper-apply-values-text"/></row>
+    </rows>
+  </grid>
+</dialog>
